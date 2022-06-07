@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.information-modal {
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 2.4rem;
+  background: rgb(195, 158, 87);
+  background: linear-gradient(
+    174deg,
+    rgba(195, 158, 87, 1) 0%,
+    rgba(84, 158, 133, 1) 100%
+  );
+  height: 100vh;
+  display: none;
+}
+
+.information-header {
+  position: relative;
+}
+
+.information-header h2 {
+  color: #74a884;
+  margin-top: 1rem;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+.information-header i {
+  color: #fff;
+  font-size: 36px;
+  position: absolute;
+  top: 40%;
+  right: 7%;
+  cursor: pointer;
+}
+
+.information-modal ol {
+  margin-top: 2rem;
+}
+
+.information-modal li {
+  display: list-item;
+  list-style-position: inside;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.information-modal-active {
+  display: block;
+}

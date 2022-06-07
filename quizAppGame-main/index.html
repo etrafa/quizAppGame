@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin & Answer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="spinner.css" />
+    <link rel="stylesheet" href="modals.css" />
+    <!-- FONTAWESOME LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="menu-container">
+      <h2>SPIN ANSWER</h2>
+      <div class="hexagon-part">
+        <div class="hexagon-shape">
+          <a><img src="./menu/play.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="button-container">
+        <div class="hexagon-shape language-button"></div>
+        <div class="hexagon-shape music-button">
+          <img class="music-image" src="./menu/music.png" alt="" />
+        </div>
+        <div class="hexagon-shape information-button">
+          <img src="./menu/info.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="information-modal">
+      <div class="information-header">
+        <h2>HOW TO PLAY?</h2>
+        <i class="fas fa-times close-information-button"></i>
+      </div>
+      <ol>
+        <li>
+          After pressing play button, you will be redirected to game section.
+        </li>
+        <li>
+          You are supposed to spin the wheel and then the computer will choose a
+          random category for you.
+        </li>
+        <li>
+          Question types are: "History", "Art", "Movie", "Science", "Geography",
+          "Sports" and "Random".
+        </li>
+        <li>Read the question carefully and try to find the correct answer.</li>
+      </ol>
+    </div>
+
+    <div class="spinner-container">
+      <h4 class="spin-wheel-text">SPIN THE WHEEL TO CHOOSE QUESTION TYPE.</h4>
+      <div id="spinner">
+        <div class="spinner-wheel"></div>
+        <div class="spinner-button"></div>
+      </div>
+    </div>
+
+    <!-- QUESTION SECTION STARTS HERE -->
+    <div class="question-container">
+      <div class="question-type">
+        <h4 class="question-type-text"></h4>
+      </div>
+      <div class="question-layout">
+        <p class="answer-checker-text">CORRECT</p>
+        <div class="user-answer-counter">
+          <p>Correct Answer: <span class="user-correct-answer">0</span></p>
+          <p>Incorrect Answer: <span class="user-wrong-answer">0</span></p>
+          <p>Question Left: <span class="question-left">10</span></p>
+        </div>
+        <p class="question-text"></p>
+      </div>
+      <div class="question-options">
+        <button class="first-option"></button>
+        <button class="second-option"></button>
+        <button class="third-option"></button>
+        <button class="fourth-option"></button>
+      </div>
+      <button class="next-question-button">NEXT</button>
+      <div class="game-over-menu">
+        <button class="main-menu-button">
+          <a href="index.html">MAIN MENU</a>
+        </button>
+        <button class="restart-game-button">RESTART GAME</button>
+      </div>
+    </div>
+    <!-- QUESTION SECTION ENDS HERE -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
